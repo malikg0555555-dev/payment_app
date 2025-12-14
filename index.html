@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>💳 Secure Payment</h1>
+        <p class="subtitle">Fast • Safe • Reliable</p>
+
+        <label>Payment Method</label>
+        <select id="method">
+            <option value="">Choose method</option>
+            <option value="card">💳 Credit Card</option>
+            <option value="paypal">🅿️ PayPal</option>
+            <option value="gpay">📱 Google Pay</option>
+        </select>
+
+        <label>Amount (Rs)</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <button onclick="makePayment()">Pay Now</button>
+
+        <div class="result" id="result"></div>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
